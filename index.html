@@ -7,59 +7,74 @@
     <title>Tax Calculator</title>
 </head>
 <body>
+    <!-- Container for the tax calculator -->
     <div class="container">
+        <!-- Heading -->
         <h1>Tax Calculator</h1>
+        <!-- Tax calculation form -->
         <form id="taxForm">
+            <!-- Input field for gross annual income -->
             <div class="input-wrapper">
-            <label for="grossIncome">Enter Gross Annual Income:
-                <span class="tooltip-icon" data-tooltip="This is the total income before any deductions"><ion-icon name="help-circle-outline"></ion-icon></span>
-            </label>
-            <input type="text" id="grossIncome" placeholder="Enter gross annual income">
-            <span class="error-icon" id="grossIncomeError" data-tooltip="Please enter a valid income">!</span>
-</div>
-<div class="input-wrapper">
-            <label for="extraIncome">Enter Extra Income:
-                <span class="tooltip-icon" data-tooltip="This is any additional income you receive"><ion-icon name="help-circle-outline"></ion-icon></span>
-            </label>
-            <input type="text" id="extraIncome" placeholder="Enter extra income from other sources">
-            <span class="error-icon" id="extraIncomeError" data-tooltip="Please enter a valid income">!</span>
-</div>
-<div class="input-wrapper">
-            <label for="deductions">Enter total applicable deductions:
-                <span class="tooltip-icon" data-tooltip="This is the amount subtracted from your gross income"><ion-icon name="help-circle-outline"></ion-icon></span>
-            </label>
-            <input type="text" id="deductions" placeholder="Add total applicable deductions">
-            <span class="error-icon" id="deductionsError" data-tooltip="Please enter a valid deduction amount">!</span>
-</div>
-<div class="input-wrapper">
-            <label for="age">Age:
-                <span class="tooltip-icon" data-tooltip="This is your current age group"><ion-icon name="help-circle-outline"></ion-icon></span>
-            </label>
-            <select id="age" >
-                <option value="" >Select Age Group</option>
-                <option value="under40">&lt; 40</option>
-                <option value="between40and60">≥ 40 & &lt; 60</option>
-                <option value="60plus">≥ 60</option>
-            </select>
-            <span class="error-icon " id="ageError" data-tooltip="Input field is mandatory">!</span>
-</div>
-            
+                <label for="grossIncome">Enter Gross Annual Income:
+                    <!-- Tooltip icon for help -->
+                    <span class="tooltip-icon" data-tooltip="This is the total income before any deductions"><ion-icon name="help-circle-outline"></ion-icon></span>
+                </label>
+                <input type="text" id="grossIncome" placeholder="Enter gross annual income">
+                <!-- Error icon for invalid input -->
+                <span class="error-icon" id="grossIncomeError" data-tooltip="Please enter a valid income">!</span>
+            </div>
+            <!-- Input field for extra income -->
+            <div class="input-wrapper">
+                <label for="extraIncome">Enter Extra Income:
+                    <!-- Tooltip icon for help -->
+                    <span class="tooltip-icon" data-tooltip="This is any additional income you receive"><ion-icon name="help-circle-outline"></ion-icon></span>
+                </label>
+                <input type="text" id="extraIncome" placeholder="Enter extra income from other sources">
+                <!-- Error icon for invalid input -->
+                <span class="error-icon" id="extraIncomeError" data-tooltip="Please enter a valid income">!</span>
+            </div>
+            <!-- Input field for deductions -->
+            <div class="input-wrapper">
+                <label for="deductions">Enter total applicable deductions:
+                    <!-- Tooltip icon for help -->
+                    <span class="tooltip-icon" data-tooltip="This is the amount subtracted from your gross income"><ion-icon name="help-circle-outline"></ion-icon></span>
+                </label>
+                <input type="text" id="deductions" placeholder="Add total applicable deductions">
+                <!-- Error icon for invalid input -->
+                <span class="error-icon" id="deductionsError" data-tooltip="Please enter a valid deduction amount">!</span>
+            </div>
+            <!-- Dropdown for age -->
+            <div class="input-wrapper">
+                <label for="age">Age:
+                    <!-- Tooltip icon for help -->
+                    <span class="tooltip-icon" data-tooltip="This is your current age group"><ion-icon name="help-circle-outline"></ion-icon></span>
+                </label>
+                <select id="age" >
+                    <option value="" >Select Age Group</option>
+                    <option value="under40">&lt; 40</option>
+                    <option value="between40and60">≥ 40 & &lt; 60</option>
+                    <option value="60plus">≥ 60</option>
+                </select>
+                <!-- Error icon for mandatory field -->
+                <span class="error-icon " id="ageError" data-tooltip="Input field is mandatory">!</span>
+            </div>
+            <!-- Submit button -->
             <button type="submit" class="submit">Submit</button>
-        </div>
         </form>
     </div>
+    <!-- Modal for displaying result -->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <h1>Your Overall income will be:</h1>
             <p id="result"></p>
             <p class="after-tax">After Tax deductions</p>
-            <button class="btn close">Close</button>
-           
+            <button class="close">Close</button>
         </div>
-      
-        </div>
+    </div>
 
+    <!-- External JavaScript module for icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
