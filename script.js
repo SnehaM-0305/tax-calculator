@@ -38,7 +38,7 @@ function clearForm() {
 
 // Event listener for form submission
 document.getElementById('taxForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault(); 
 
     // Retrieve input values
     var grossIncome = parseFloat(document.getElementById('grossIncome').value.trim());
@@ -80,7 +80,6 @@ document.getElementById('taxForm').addEventListener('submit', function(event) {
 
 // Event listener for closing modal
 document.querySelector('.close').addEventListener('click', function() {
-    // Hide modal and clear form inputs
-    document.getElementById('myModal').style.display = "none";
+    document.getElementById('myModal').classList.remove('modal-after');
     clearForm();
 });
