@@ -7,10 +7,10 @@ To run this project locally, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/SnehaM-0305/tax-calculator.git
+   git clone https://github.com/SnehaM-0305/taxcalculator.git
    
    Navigate to the project directory:
-   cd tax-calculator
+   cd taxcalculator
    Open the index.html file in your web browser.
    
 Technologies Used
