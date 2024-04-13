@@ -19,7 +19,7 @@ CSS
 JavaScript
 
 LINK to deployed website :
-https://sneham-0305.github.io/tax-calculator/
+(https://sneham-0305.github.io/taxcalculator/)
 
   Tests
 Below is a screenshot showing all tests passing:
